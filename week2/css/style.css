@@ -1,0 +1,99 @@
+
+/*****BASIC STYLING AND FOR LARGE SIZE DISPLAY *****/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Times New Roman", serif;
+	font-size: 18px;
+	text-align: justify;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.75em;
+	margin: 20px auto 40px auto;
+}
+
+.row {
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.row > section {
+	background-color: #b3b3b3;
+	width: 31%;
+	float: left;
+	border: 2px solid black;
+	position: relative;
+}
+
+.chicken, .beef {
+	margin-right: 3.5%;
+}
+
+.theTitle {
+	border: 1px solid black;
+	width: 150px;
+	font-size: 1.25em;
+	text-align: center;
+	font-weight: 550;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 5px;
+}
+
+.chicken .theTitle {
+	background-color: pink;
+}
+
+.beef .theTitle {
+	background-color: red;
+	color: white;
+}
+
+.sushi .theTitle {
+	background-color: yellow;
+}
+
+.theText {
+	padding: 15px 10px 0px 10px;
+	margin-top: 15px;
+}
+
+
+/***** MEDIUM SIZE DISPLAY *****/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.row > .chicken, .row > .beef {
+		width: 45%;
+	}
+
+	.chicken, .beef {
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+	}
+
+	.row > .sushi {
+		margin: 35px 2.5% 30px 2.5%;
+		width: 95%;
+	}
+
+}
+
+
+/***** SMALL SIZE DISPLAY *****/
+
+@media (max-width: 768px) {
+
+	.row > section {
+		width: 95%;
+		margin: 0px 2.5% 10px 2.5%;
+	}
+
+}
