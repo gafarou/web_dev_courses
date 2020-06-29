@@ -1,0 +1,132 @@
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	background-color: #951c45;
+}
+
+
+/*HEADER STYLES START HERE*/
+
+#navbarHeader {
+	background-color: #f6b319;
+}
+
+#navContainer {
+	border: 1px solid black;
+}
+
+#companyLogo div {
+	background: url("../images/restaurant-logo_medium.png");
+	width: 100px;
+	height: 100px;
+}
+
+#navbarHeader a:hover, #navbarHeader a:focus {
+	text-decoration: none;
+}
+
+#companyName  h1 {
+	font-family: 'Lora', serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #222;
+}
+
+#companyName a {
+	color: #557c3e;
+}
+
+#companyName a:hover, #companyName a:focus {
+	color: #e7e7e7;
+}
+
+#kosherCertif {
+	font-size: .6em;
+	color: #000;
+}
+
+#collapsibleMenu {
+	line-height: .5;
+	font-size: .6em;
+}
+
+#collapsibleMenu span {
+	vertical-align: middle;
+	margin-bottom: 4px;
+}
+
+#collapsibleMenu a {
+	color: #951c45;
+	font-weight: 700;
+}
+
+#collapsibleMenu a:hover {
+	background: #e7e7e7;
+}
+
+#phoneNum a {
+	font-size: 1.3em;
+}
+
+#phoneNum span {
+	color: #557c3e;
+}
+
+
+#navbarCollapsible button {
+	border: 2px solid #61122f;
+}
+
+/************ MEDIA QUERRY GOES HERE ************/
+
+
+/************ LARGE DEVICES ************/
+@media (min-width: 1200px) {
+
+	/*****HEADER*****/
+	#companyLogo div {
+	background: url("../images/restaurant-logo_large.png");
+	width: 150px;
+	height: 150px;
+	}
+
+	#navbarCollapsible {
+		margin-left: 130px !important;
+	}
+
+}
+
+
+/************ MEDIUM DEVICES ************/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	/*****HEADER*****/
+		
+}
+
+/************ SMALL DEVICES ************/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	/*****HEADER*****/
+	#navbarCollapsible {
+		margin-left: 125px;
+	}
+
+	#companyName  h1 {
+		font-size: 1em;
+	}
+
+
+}
+
+/************ EXTRA SMALL DEVICES ************/
+@media (max-width: 767px) {
+
+	/*****HEADER*****/
+	#companyName  h1 {
+		font-size: 3VW;
+	}
+	
+}

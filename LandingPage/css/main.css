@@ -1,0 +1,31 @@
+
+.navbar {
+	background: #f97300;
+}
+
+.navbar-brand, .nav-link {
+	color: #f4f4f4;
+	cursor: pointer;
+}
+
+.nav-link {
+	margin-right: 1em !important;
+}
+
+.nav-link:hover {
+	background: #f4f4f4;
+	color: #f97300;
+}
+
+.navbar-toggler {
+	background: #fff;
+}
+
+.headerNav {
+	width: 100%;
+	height: 700px;
+	background-image: url('../images/image7.png');
+	background-attachment: scroll;
+	background-size: cover;
+	background-position: center;
+}
